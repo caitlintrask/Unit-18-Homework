@@ -17,7 +17,8 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb://caitlintrask:password1@ds237707.mlab.com:37707/heroku_n6vj5z7x", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 // routes
